@@ -1,8 +1,12 @@
-"""Simple processing functions for the starter package."""
+"""Example module for the demo package"""
 
-from collections.abc import Iterable
+from .logger_config import logger
 
 
-def total_count(counts: Iterable[int]) -> int:
-    """Return the sum of a sequence of example counts."""
-    return sum(counts)
+def hello_world(message):
+    """Example function to say Hello world with a message"""
+    logger.debug("This is DEBUG level log message")
+    logger.info("This is INFO level log message")
+    logger.warning("This is WARN level log message")
+    logger.error("This is ERROR level log message")
+    return f"Hello world!: {message}"
