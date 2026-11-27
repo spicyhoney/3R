@@ -10,3 +10,8 @@ def hello_world(message):
     logger.warning("This is WARN level log message")
     logger.error("This is ERROR level log message")
     return f"Hello world!: {message}"
+
+
+def celsius_to_fahrenheit(celsius: float) -> float:
+    """Convert a temperature in degrees Celsius to degrees Fahrenheit."""
+    return celsius * 1.8 + 32
